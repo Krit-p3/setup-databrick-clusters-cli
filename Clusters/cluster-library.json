@@ -1,0 +1,6 @@
+{
+    "cluster_id": "cluster-id",
+    "libraries": [
+      {"pypi": {"package": "package-name", "version": "1.0.0"}}
+    ]
+  }

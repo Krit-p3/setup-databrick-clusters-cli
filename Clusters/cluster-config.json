@@ -1,0 +1,40 @@
+// Azure platform
+
+{
+    "cluster_name": "SampleCluster",
+    "spark_version": "7.3.x-scala2.12",
+    "num_workers": 1,
+    "node_type_id": "Standard_DS3_v2",
+    "driver_node_type_id": "Standard_DS3_v2",
+    "custom_tags": {
+      "Infa_Generated_Tag": "Infa_Generated_Tag"
+    },
+    "spark_env_vars": {
+      "PYSPARK_PYTHON": "/databricks/python3/bin/python3"
+    },
+    "enable_elastic_disk": false
+}
+
+// AWS platform
+
+{
+    "cluster_name": "SampleCluster",
+    "spark_version": "7.3.x-scala2.12",
+    "num_workers": 1,
+    "node_type_id": "i3.xlarge",
+    "driver_node_type_id": "i3.xlarge",
+    "custom_tags": {
+      "Infa_Generated_Tag": "Infa_Generated_Tag"
+    },
+    "spark_env_vars": {
+      "PYSPARK_PYTHON": "/databricks/python3/bin/python3"
+    },
+    "enable_elastic_disk": false,
+    "aws_attributes": {
+      "ebs_volume_count": 3,
+      "zone_id": "us-east-1e",
+      "ebs_volume_size": 100,
+      "spot_bid_price_percent": 100,
+      "first_on_demand": 1
+    }
+}
