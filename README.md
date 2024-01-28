@@ -126,7 +126,8 @@ databricks workspace import --file /path/to/local/file.py
   databricks workspace import-dir sourcepath/to/dir targetpath/to/dir
 ```
 
-##  case 2 
+*or* 
+ 
 create directory
 
 ```bash
@@ -172,7 +173,7 @@ Create a `Databricks_jobs.json`
       }
     }
   ]
-}'
+}
 ```
 
 run the command in terminal
