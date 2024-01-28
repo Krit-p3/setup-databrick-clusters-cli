@@ -127,16 +127,20 @@ databricks workspace import --file /path/to/local/file.py
 ```
 
 ##  case 2 
-make directory
+create directory
 
 ```bash
 databricks fs mkdir dbfs:/<directory>
 ```
+Replace <directory_path> with the path where you want to create the directory in Databricks.
+
 
 copy file from local to databricks directory 
 ```bash
 databricks fs cp -r sourcepath/to/dir targetpath/to/dir
 ```
+Replace /local/path/to/source_dir with the path to the source directory on your local system, <directory_path> with the path to the directory in Databricks where you want to copy the files, and target_dir with the name you want to give to the target directory in Databricks.
+
 ## Creating a Databricks jobs
 The following the  example uses the CLI to create a Databricks jobs. This task run the specified Databricks notebook.
 Create a `Databricks_jobs.json` 
